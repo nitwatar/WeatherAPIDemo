@@ -34,6 +34,7 @@ public class GetWeatherRestAdapter {
 
     public WeatherData testWeatherApiSync(String city) {
         WeatherData result;
+        int as;
         Log.d(TAG, "testWeatherApi: for city:" + city);
         result = mApi.getWeatherFromApiSync(city,OPEN_WEATHER_API);
         return result;
