@@ -28,6 +28,7 @@ public class GetWeatherRestAdapter {
 
     public void testWeatherApi(String city, Callback<WeatherData> callback){
         Log.d(TAG, "testWeatherApi: for city:" + city);
+        int b ;
         mApi.getWeatherFromApi(city, OPEN_WEATHER_API, callback);
     }
 
